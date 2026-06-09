@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #05080d;
+  color: #dcecff;
+  font-family: Arial, sans-serif;
+}
+
+.hud-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  z-index: 10;
+  border-bottom: 1px solid rgba(120, 200, 255, 0.35);
+  background: rgba(5, 8, 13, 0.9);
+}
+
+.hud-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.hud-nav a {
+  color: #8fdcff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.screen {
+  min-height: 100vh;
+  padding: 120px 48px 48px;
+  display: grid;
+  place-items: center;
+}
+
+.panel {
+  width: min(900px, 90vw);
+  min-height: 420px;
+  border: 1px solid rgba(120, 200, 255, 0.45);
+  background: rgba(8, 16, 28, 0.85);
+  display: grid;
+  place-items: center;
+}
